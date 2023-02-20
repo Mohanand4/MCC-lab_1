@@ -4,16 +4,17 @@ import 'package:latlong2/latlong.dart';
 
 
 class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
-
+   Home({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+   const String mapBoxAccessToken =  'pk.eyJ1IjoibW9oYW5uYWQ0IiwiYSI6ImNrd2tpbHA3bjBqcDIydnBkODhmamNycWgifQ.1BzZ74jt-GXkcIDfhYA4PA';
+   const String mapBoxStyleId = 'mapbox://styles/mohannad4/cle1qhvsv002601oggvmthc5p';
+   final myLocation = LatLng(31.52939433711108, 34.45657726997659);
+    int zoom = 13;
+    int minZoom = 3;
+    int maxZoom = 18;
 
-     const String mapBoxAccessToken =  'pk.eyJ1IjoibW9oYW5uYWQ0IiwiYSI6ImNrd2tpbHA3bjBqcDIydnBkODhmamNycWgifQ.1BzZ74jt-GXkcIDfhYA4PA';
-     const String mapBoxStyleId = 'mapbox://styles/mohannad4/cle1qhvsv002601oggvmthc5p';
-     final myLocation = LatLng(31.52939433711108, 34.45657726997659);
-
-     //mapBox app 
+     //mapBox app
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 33, 32, 32),
