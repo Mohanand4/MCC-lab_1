@@ -14,6 +14,8 @@ class Home extends StatelessWidget {
     int minZoom = 3;
     int maxZoom = 18;
 
+    //edit the mapBox style id and the mapBox access token in the mapBox website
+
      //mapBox app
     return Scaffold(
       appBar: AppBar(
